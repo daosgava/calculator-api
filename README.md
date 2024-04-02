@@ -31,8 +31,8 @@ This API offers basic arithmetic operations—addition, subtraction, multiplicat
   - **Endpoint:** `/add`
   - **Method:** `GET`
   - **Query Parameters:**
-    - `num1`: The first number to add.
-    - `num2`: The second number to add.
+    - `num1`: The first number.
+    - `num2`: The second number.
   - **Success Response:** JSON object containing the result of the addition.
   - **Error Response:** If any of the inputs are invalid, an error message is returned.
 
@@ -41,8 +41,8 @@ This API offers basic arithmetic operations—addition, subtraction, multiplicat
   - **Endpoint:** `/subtract`
   - **Method:** `GET`
   - **Query Parameters:**
-    - `num1`: The first number from which you subtract.
-    - `num2`: The second number to be subtracted from the first.
+    - `num1`: The first number.
+    - `num2`: The second number.
   - **Success Response:** JSON object containing the result of the subtraction.
   - **Error Response:** If any of the inputs are invalid, an error message is returned.
 
@@ -51,8 +51,8 @@ This API offers basic arithmetic operations—addition, subtraction, multiplicat
   - **Endpoint:** `/multiply`
   - **Method:** `GET`
   - **Query Parameters:**
-    - `num1`: The first number to multiply.
-    - `num2`: The second number to multiply with the first.
+    - `num1`: The first number.
+    - `num2`: The second number.
   - **Success Response:** JSON object containing the result of the multiplication.
   - **Error Response:** If any of the inputs are invalid, an error message is returned.
 
