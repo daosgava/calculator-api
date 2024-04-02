@@ -1,0 +1,17 @@
+{
+  "name": "calulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./src/index.mjs"
+  },
+  "author": "Daniel Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "winston": "^3.12.0"
+  }
+}
