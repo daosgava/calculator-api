@@ -66,6 +66,36 @@ This API offers basic arithmetic operations—addition, subtraction, multiplicat
   - **Success Response:** JSON object containing the result of the division.
   - **Error Response:** If any of the inputs are invalid, an error message is returned, especially if `b` is zero.
 
+- **Exponentiation**
+
+  - **Endpoint:** `/exponentiation`
+  - **Method:** `GET`
+  - **Query Parameters:**
+    - `num1`: The first number.
+    - `num2`: The second number.
+  - **Success Response:** JSON object containing the result of the exponentiation.
+  - **Error Response:** If any of the inputs are invalid, an error message is returned.
+
+- **Square Root**
+
+  - **Endpoint:** `/square-root`
+  - **Method:** `GET`
+  - **Query Parameters:**
+    - `num1`: The first number.
+  - **Success Response:** JSON object containing the result of the exponentiation.
+  - **Error Response:** If num1 is not a number, an error message is returned.
+
+- **Modulo**
+
+  - **Endpoint:** `/module`
+  - **Method:** `GET`
+  - **Query Parameters:**
+    - `num1`: The first number.
+    - `num2`: The second number.
+  - **Success Response:** JSON object containing the result of the module operation.
+  - **Error Response:** If any of the inputs are invalid, an error message is returned.
+
+
 #### Example
 
 To add two numbers, navigate to the following URL in your browser or use a tool like `curl`:
