@@ -4,3 +4,23 @@
 {"level":"error","message":{"method":"GET","text":"division by zero","url":"/divide?num1=4&num2=0"},"service":"calculator-service"}
 {"level":"error","message":{"method":"GET","text":"division by zero","url":"/divide?num1=4&num2=0"},"service":"calculator-service"}
 {"level":"error","message":{"method":"GET","text":"num1 is not a number","url":"/add?subtract=4&num2=6"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num1 is not a number","url":"/divide?"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"invalid operation","url":"/multiply?num1=2&num2=3"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"invalid operation","url":"/multiply?num1=2&num2=3"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not required for square root operation","url":"/square-root?num1=2&num2=3"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not required for square root operation","url":"/square-root?num1=2&num2=3"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num1 is not a number","url":"/square-root?"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"division by zero","url":"/divide?num1=2&num2=0"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/divide?num1=2"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/divide?num1=2"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/divide?num1=2"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/divide?num1=2"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num1 is not a number","url":"/divide?"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/divide?num1=2"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/add?num1=2"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num1 is not a number","url":"/add?"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/exponentiation?num1=2"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not required for square root operation","url":"/square-root?num1=2&num2=3"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not required for square root operation","url":"/square-root?num1=2&num2=4"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num1 is not a number","url":"/square-root?"},"service":"calculator-service"}
+{"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/module?num1=2"},"service":"calculator-service"}
