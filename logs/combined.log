@@ -88,3 +88,4 @@
 {"level":"info","message":{"method":"GET","text":"valid operation","url":"/square-root?num1=2"},"service":"calculator-service"}
 {"level":"error","message":{"method":"GET","text":"num2 is not a number","url":"/module?num1=2"},"service":"calculator-service"}
 {"level":"info","message":{"method":"GET","text":"valid operation","url":"/module?num1=2&num2=4"},"service":"calculator-service"}
+{"level":"info","message":{"method":"GET","text":"valid operation","url":"/module?num1=2&num2=4"},"service":"calculator-service"}

@@ -15,7 +15,7 @@ const mathOperations = {
 };
 
 class Operations {
-	validateInputs = (inputA, inputB, operationType = ADD) => {
+	validateInputs = (inputA, inputB, operationType) => {
 		// Convert inputs to numbers
 		const num1 = parseInt(inputA);
 		const num2 = parseInt(inputB);
