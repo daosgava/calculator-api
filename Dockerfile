@@ -15,7 +15,7 @@ ENV NODE_ENV production
 
 WORKDIR /usr/src/app
 
-# Install curl
+# Install curl for the health check.
 RUN apk update && apk add curl
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
