@@ -9,7 +9,7 @@
 # https://github.com/docker/awesome-compose
 services:
   server:
-    image: daosgava/calculator
+    image: australia-southeast2-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/sit737/calculator:latest
     build:
       context: .
     environment:
