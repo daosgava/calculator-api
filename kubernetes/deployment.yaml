@@ -18,6 +18,6 @@ spec:
       containers:
       - name: calculator-api
         imagePullPolicy: Never
-        image: daosgava/calculator:latest
+        image: australia-southeast2-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/sit737/calculator:latest
         ports:
         - containerPort: 3010
