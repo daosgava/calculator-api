@@ -1,7 +1,7 @@
 import { paths } from "./constants.mjs";
 import logger from "./logger.mjs";
 
-const { ADD, SUBTRACT, MULTIPLY, DIVIDE, EXPONENTIATION, SQUARE_ROOT, MODULE } = paths;
+const { ADD, SUBTRACT, MULTIPLY, DIVIDE, EXPONENTIATION, SQUARE_ROOT, MODULE, LOGARITHM } = paths;
 
 // Define math operations
 const mathOperations = {
@@ -12,6 +12,7 @@ const mathOperations = {
 	[EXPONENTIATION]: (a, b) => a ** b,
 	[SQUARE_ROOT]: (a) => Math.sqrt(a),
 	[MODULE]: (a, b) => a % b,
+	[LOGARITHM]: (a, b) => Math.log(a) / Math.log(b),
 };
 
 class Operations {
@@ -26,6 +27,7 @@ class Operations {
 			case MULTIPLY:
 			case EXPONENTIATION:
 			case MODULE:
+			case LOGARITHM:
 				// Validate inputA
 				if (isNaN(num1)) {
 					throw new Error("num1 is not a number");

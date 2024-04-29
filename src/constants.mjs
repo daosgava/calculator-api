@@ -6,6 +6,7 @@ export const paths = {
 	EXPONENTIATION: "/exponentiation",
 	SQUARE_ROOT: "/square-root",
 	MODULE: "/module",
+	LOGARITHM: "/logarithm",
 };
 
 export const port = 3010;

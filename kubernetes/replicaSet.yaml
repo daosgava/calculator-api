@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: calculator-api
+  labels:
+    app: calculator-api
+    tier: backend
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: backend
+  template:
+    metadata:
+      labels:
+        tier: backend
+    spec:
+      containers:
+      - name: calculator-api
+        image: daosgava/calculator:latest
+        ports:
+        - containerPort: 3010

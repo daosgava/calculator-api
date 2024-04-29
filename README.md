@@ -95,6 +95,15 @@ This API offers basic arithmetic operations—addition, subtraction, multiplicat
   - **Success Response:** JSON object containing the result of the module operation.
   - **Error Response:** If any of the inputs are invalid, an error message is returned.
 
+- **Base Logarithm**
+  - **Endpoint:** `/logarithm`
+  - **Method:** `GET`
+  - **Query Parameters:**
+    - `num1`: The first number.
+    - `num2`: The second number.
+  - **Success Response:** JSON object containing the result of the base logarithm operation.
+  - **Error Response:** If any of the inputs are invalid, an error message is returned.
+
 
 #### Example
 

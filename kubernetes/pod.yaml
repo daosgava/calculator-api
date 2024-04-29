@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: calculator-api
+  labels:
+    app: calculator-api
+spec:
+  containers:
+  - image: daosgava/calculator:latest
+    imagePullPolicy: Never
+    name: calculator-api
+    ports:
+    - containerPort: 3010
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
