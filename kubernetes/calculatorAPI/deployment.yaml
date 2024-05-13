@@ -6,7 +6,7 @@ metadata:
     app: calculator-api
     tier: backend
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       tier: backend
