@@ -39,11 +39,11 @@ app.get("/get-entries", async (req, res) => {
         res.send(documents);
 	} catch (e) {
 		console.error(e);
+		res.status(500).send("Internal server error");
 	}
 });
 
 app.post("/add-entry", async (req, res) => {
-	console.log({body: req.body});
 	const data = req.body;
 	if (!data) {
 		res.status(400).send("No data provided");
@@ -59,6 +59,7 @@ app.post("/add-entry", async (req, res) => {
 		res.send(result);
 	} catch (e) {
 		console.error(e);
+		res.status(500).send("Internal server error");
 	}
 });
 
