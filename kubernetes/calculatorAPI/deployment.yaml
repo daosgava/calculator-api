@@ -28,3 +28,14 @@ spec:
           requests:
             cpu: "100m"
             memory: "256Mi"
+        env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              key: username
+              name: mongodb-config
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: mongodb-secret
