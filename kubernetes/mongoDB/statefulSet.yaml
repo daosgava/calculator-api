@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: mongo
-  serviceName: "mongo-service"
+  serviceName: "mongo"
   replicas: 3
   template:
     metadata:
