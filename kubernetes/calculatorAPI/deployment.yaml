@@ -6,7 +6,7 @@ metadata:
     app: calculator-api
     tier: backend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       tier: backend
@@ -21,3 +21,10 @@ spec:
         image: australia-southeast2-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/sit737/calculator:1.0.0
         ports:
         - containerPort: 3010
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "100m"
+            memory: "256Mi"
