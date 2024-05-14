@@ -1,4 +1,4 @@
-export const paths = {
+export const operationPaths = {
 	ADD: "/add",
 	SUBTRACT: "/subtract",
 	MULTIPLY: "/multiply",

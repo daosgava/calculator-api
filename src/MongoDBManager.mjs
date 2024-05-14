@@ -25,7 +25,19 @@ class MongoDBManager {
 		try {
 			await this.connect();
 			const result = await this.collection.insertOne(data);
-			console.log(`Inserted document with id: ${result.insertedId}`);
+
+			res.send(result);
+		} catch (e) {
+			console.error(e);
+			res.status(500).send("Internal server error");
+		}
+	};
+
+	deleteDocument = async (req, res) => {
+		try{
+			await this.connect();
+			const result = await this.collection.deleteOne({ name: req.params.name });
+
 			res.send(result);
 		} catch (e) {
 			console.error(e);
@@ -37,7 +49,7 @@ class MongoDBManager {
 		try {
 			await this.connect();
 			const documents = await this.collection.find({}).toArray();
-			console.log(`Found documents: ${documents}`);
+
 			res.send(documents);
 		} catch (e) {
 			console.error(e);

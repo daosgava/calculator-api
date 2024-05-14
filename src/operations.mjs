@@ -1,4 +1,4 @@
-import { paths } from "./constants.mjs";
+import { operationPaths as paths } from "./constants.mjs";
 import logger from "./logger.mjs";
 
 const { ADD, SUBTRACT, MULTIPLY, DIVIDE, EXPONENTIATION, SQUARE_ROOT, MODULE, LOGARITHM } = paths;
