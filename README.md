@@ -96,6 +96,7 @@ This API offers basic arithmetic operations—addition, subtraction, multiplicat
   - **Error Response:** If any of the inputs are invalid, an error message is returned.
 
 - **Base Logarithm**
+
   - **Endpoint:** `/logarithm`
   - **Method:** `GET`
   - **Query Parameters:**
@@ -104,6 +105,38 @@ This API offers basic arithmetic operations—addition, subtraction, multiplicat
   - **Success Response:** JSON object containing the result of the base logarithm operation.
   - **Error Response:** If any of the inputs are invalid, an error message is returned.
 
+## MongoDB Operations
+
+- **Get Documents**
+  - **Endpoint:** `/documents`
+  - **Method:** `GET`
+  - **Description:** Retrieves all documents from the specified MongoDB collection.
+  - **Success Response:** JSON array of documents.
+  - **Error Response:** If there is an issue accessing the database, an error message is returned.
+
+- **Insert Document**
+  - **Endpoint:** `/document`
+  - **Method:** `POST`
+  - **Description:** Inserts a new document into the MongoDB collection.
+  - **Body Parameters:**
+    - `name`: Name of the individual.
+    - `age`: Age of the individual.
+    - `occupation`: Occupation of the individual.
+  - **Success Response:** JSON object containing the `insertedId` of the newly added document.
+  - **Error Response:** If the document cannot be inserted or the request is malformed, an error message is returned.
+
+- **Delete Document**
+  - **Endpoint:** `/document/:name`
+  - **Method:** `DELETE`
+  - **Description:** Deletes a document from the MongoDB collection based on the name provided in the URL parameter.
+  - **URL Parameters:**
+    - `name`: The name of the individual to delete.
+  - **Success Response:** JSON object indicating the number of deleted documents.
+  - **Error Response:** If no document is found or there is an issue during deletion, an error message is returned.
+
+## Configuration Requirements
+
+Before deploying or running the application, it is essential to configure the necessary environment variables. These variables are critical for the application to connect and interact with MongoDB securely.
 
 #### Example
 
