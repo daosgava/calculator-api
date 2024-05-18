@@ -1,6 +1,6 @@
 services:
   server:
-    image: australia-southeast2-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/sit737/calculator:1.0.0
+    image: us-central1-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/calculator-api/calculator:1.0.0
     build:
       context: .
     environment:
