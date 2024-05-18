@@ -6,7 +6,7 @@ metadata:
     app: calculator-api
     tier: backend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       tier: backend
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: calculator-api
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         image: us-central1-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/calculator-api/calculator:1.0.0
         ports:
         - containerPort: 3010
