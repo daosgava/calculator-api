@@ -40,3 +40,5 @@ jobs:
         docker build -t $IMAGE_URI .
         docker push $IMAGE_URI
         echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_ENV
+
+    # TODO - Deploy the Docker image to GKE
