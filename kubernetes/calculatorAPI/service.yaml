@@ -3,11 +3,9 @@ kind: Service
 metadata:
   name: calculator-api
 spec:
-  selector:
-    tier: backend
-  externalTrafficPolicy: Cluster
-  ports:
-  - port: 8080
-    protocol: TCP
-    targetPort: 3010
   type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 3010
+  selector:
+    app: calculator-api
