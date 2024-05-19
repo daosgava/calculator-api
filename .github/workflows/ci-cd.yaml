@@ -6,8 +6,8 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: cluster-1
-  GKE_ZONE: us-central1-a
+  GKE_CLUSTER: 'cluster-1'
+  GKE_ZONE: 'us-central1-a'
   IMAGE: static-site
   CONTAINER_REGISTRY_URI: 'us-central1-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/calculator-api/'
 
@@ -23,8 +23,8 @@ jobs:
 
     - name: Log secrets
       run: |
-        echo ${{ secrets.GKE_SA_KEY }}
-        echo ${{ secrets.GKE_PROJECT }}
+        echo "SA_KEY: ${{ secrets.GKE_SA_KEY }}"
+        echo "PROJECT: ${{ secrets.GKE_PROJECT }}"
 
     # Setup gcloud CLI
     - uses: google-github-actions/setup-gcloud@1bee7de035d65ec5da40a31f8589e240eba8fde5
