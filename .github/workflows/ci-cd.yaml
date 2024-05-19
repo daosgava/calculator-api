@@ -21,6 +21,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Log secrets
+      run: |
+        echo ${{ secrets.GKE_SA_KEY }}
+        echo ${{ secrets.GKE_PROJECT }}
+
     # Setup gcloud CLI
     - uses: google-github-actions/setup-gcloud@1bee7de035d65ec5da40a31f8589e240eba8fde5
       with:
@@ -31,6 +36,7 @@ jobs:
     # helper for authentication
     - run: |-
         gcloud --quiet auth configure-docker
+  
 
     # Get the GKE credentials so we can deploy to the cluster
     - uses: google-github-actions/get-gke-credentials@db150f2cc60d1716e61922b832eae71d2a45938f
