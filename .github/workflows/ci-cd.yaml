@@ -8,8 +8,7 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: 'cluster-1'
   GKE_ZONE: 'us-central1-a'
-  IMAGE: static-site
-  CONTAINER_REGISTRY_URI: 'us-central1-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/calculator-api/'
+  CONTAINER_REGISTRY_URI: 'us-central1-docker.pkg.dev/sit737-24t1-garcia-var-ade6d59/calculator-api/calculator-api'
 
 jobs:
   setup-build-publish-deploy:
