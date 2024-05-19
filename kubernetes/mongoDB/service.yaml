@@ -5,9 +5,8 @@ metadata:
 spec:
   selector:
     app: mongo
-  externalTrafficPolicy: Cluster
   ports:
-  - port: 32000
-    protocol: TCP
-    targetPort: 27017
-  type: LoadBalancer
+    - protocol: TCP
+      port: 32000
+      targetPort: 27017
+  type: ClusterIP
