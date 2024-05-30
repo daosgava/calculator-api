@@ -1,10 +1,10 @@
+**Note:** The purpose of this project is to serve as a practical exercise in deploying a cloud-native application.
+
 ### Calculator API
 
 #### Overview
 
 This API offers basic arithmetic operations—addition, subtraction, multiplication, and division—through HTTP GET requests. Users can perform calculations by providing two numbers as query parameters, receiving results in JSON format.
-
-**Note:** The purpose of this project is to serve as a practical exercise in deploying a cloud-native application.
 
 #### Getting Started
 
